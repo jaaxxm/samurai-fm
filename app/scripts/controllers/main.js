@@ -14,20 +14,20 @@ angular.module('samuraiFMApp')
                 styles : [
                     'Deep'
                 ], 
-                desc: 'Donec parabellum quensistarum'
+                desc: 'Short description goes here Donec parabellum quensistarum'
             }, 
             {
                 title: 'Tapesh', 
                 imgSrc: 'img/featured/2.jpg',
                 imgWave: 'img/wave/2.png',
                 genres : [ 
-                    'House',
-                    'Techno'
+                    'World',
+                    'Crossover'
                 ],
                 styles : [
-                    'Deep'
+                    'Latin'
                 ], 
-                desc: 'lorem Ipsum decomet'
+                desc: 'Short description goes here lorem Ipsum decomet'
             }, 
             {
                 title: 'Ben Mono', 
@@ -40,7 +40,7 @@ angular.module('samuraiFMApp')
                 styles : [
                     'Deep'
                 ], 
-                desc: 'lorem Ipsum decomet'
+                desc: 'Short description goes here lorem Ipsum decomet'
             }, 
             {
                 title: 'Tapesh', 
@@ -53,7 +53,7 @@ angular.module('samuraiFMApp')
                 styles : [
                     'Deep'
                 ], 
-                desc: 'lorem Ipsum decomet'
+                desc: 'Short description goes here lorem Ipsum decomet'
             },             
             {
                 title: 'DJ 3000 set', 
@@ -66,7 +66,7 @@ angular.module('samuraiFMApp')
                 styles : [
                     'Deep'
                 ], 
-                desc: 'lorem Ipsum decomet'
+                desc: 'Short description goes here lorem Ipsum decomet'
             }
         ];
         $scope.latest = [
@@ -74,30 +74,65 @@ angular.module('samuraiFMApp')
                 title: 'DJ 3000 set',                 
                 imgArtist: 'img/artist/1.jpg',
                 imgWave: 'img/wave/1.png',
+                genres : [ 
+                    'House',
+                    'Techno'
+                ],
+                styles : [
+                    'Deep'
+                ],                 
                 duration: '124'
             }, 
             {
                 title: 'DJ 3000 set', 
                 imgArtist: 'img/artist/2.jpg',
                 imgWave: 'img/wave/2.png',
-                genre: 'House Techno',
+                genres : [ 
+                    'House',
+                    'Techno'
+                ],
+                styles : [
+                    'Deep'
+                ],                 
+                duration: '124'
             }, 
             {
                 title: 'DJ 3000 set',                 
                 imgArtist: 'img/artist/3.jpg',
                 imgWave: 'img/wave/1.png',
+                genres : [ 
+                    'House',
+                    'Techno'
+                ],
+                styles : [
+                    'Deep'
+                ],                 
                 duration: '124'
             }, 
             {
                 title: 'DJ 3000 set',                 
                 imgArtist: 'img/artist/2.jpg',
                 imgWave: 'img/wave/1.png',
+                genres : [ 
+                    'House',
+                    'Techno'
+                ],
+                styles : [
+                    'Deep'
+                ],                 
                 duration: '124'
             }, 
             {
                 title: 'DJ 3000 set',                 
                 imgArtist: 'img/artist/1.jpg',
                 imgWave: 'img/wave/1.png',
+                genres : [ 
+                    'House',
+                    'Techno'
+                ],
+                styles : [
+                    'Deep'
+                ],                 
                 duration: '124'
             }            
         ];
