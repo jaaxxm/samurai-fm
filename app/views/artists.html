@@ -1,0 +1,11 @@
+<div class="row-fluid">
+    <ul class="thumbnails">
+        <li class="span3" ng-repeat="artist in artists">
+            <h4>{{artist.title}}</h4>
+            <img alt="{{artist.title}}" src="{{artist.imgArtist}}">
+            {{artist.label}}
+            {{artist.tags}}
+            {{artist.country}}
+        </li>
+    </ul>
+</div>

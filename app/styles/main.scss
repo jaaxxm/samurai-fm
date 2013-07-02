@@ -1,0 +1,274 @@
+@import "bootstrap";
+@import "font-awesome";
+
+
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+@mixin gradient-horizontal-transfluent($startColor:rgba(0,0,0,0.85), $startStop: -20%, $endColor:rgba(0,0,0,0), $endStop: 100%) {
+// background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  $startColor $startStop, $endColor $endStop); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop($startStop,$startColor), color-stop($endStop,$endColor)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  $startColor $startStop,$endColor $endStop); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  $startColor $startStop,$endColor $endStop); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  $startColor $startStop,$endColor $endStop); /* IE10+ */
+background: linear-gradient(to bottom,  $startColor $startStop,$endColor $endStop); /* W3C */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-8 */
+}
+
+body {
+    padding-top: 60px; 
+    // @include gradient-horizontal-three-colors(#333, #999, 50%, #333);
+}
+
+// Fluid multi-row thumbnails pathc
+.row-fluid .thumbnails .span1:nth-child(12n+1), 
+.row-fluid .thumbnails .span2:nth-child(6n+1), 
+    .row-fluid .thumbnails .span3:nth-child(4n+1), 
+    .row-fluid .thumbnails .span4:nth-child(3n+1), 
+    .row-fluid .thumbnails .span6:nth-child(2n+1) {
+        margin-left: 0;
+}
+// 
+.promo {
+    min-height: 300px;
+    text-align: center;
+    background-color: $grayDarker;
+    h2 {
+        padding-top: 110px;
+    }
+}
+//
+.feature {
+    position:relative;
+    .feature-title, .feature-info, .player {
+        position:absolute;
+    }
+    .feature-title {
+        top: 0;
+        left: 0;
+        width: 100%;
+        line-height: 1.5;
+        margin: 0;
+        @include gradient-horizontal-transfluent();
+    }
+    .feature-info {
+        top: 0;
+        right: 0;
+    }
+    .player { bottom: 0;}
+}
+
+// Flex globals
+.flex {
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    > * {
+        flex:1;
+    }
+}
+
+// Labels stack
+.labels {
+    .nav-stacked, .tab-content {
+        float: left;
+    }
+} 
+
+// Styles color table
+.house {
+    background-color:$black;
+    // background-color:#7100FF;
+    color:#7100FF;
+    // color:#000;
+    // color:#fff;
+}
+.disco, .punk {
+    background-color:$black;
+    // background-color:#8E01FF;
+    color:#8E01FF;
+    // color:#000;
+    // color:#fff;
+}
+.breaks, .minimal {
+    background-color:$black;
+    // background-color:#AD02FF;
+    color:#AD02FF;
+    // color:#000;
+    // color:#fff;
+}
+.hip-hop, .hardcore {
+    background-color:$black;
+    // background-color:#D001FF;
+    color:#D001FF;
+    // color:#000;
+    // color:#fff;
+}
+.electronica, .dub {
+    background-color:$black;
+    // background-color:#F500FE;
+    color:#F500FE;
+    // color:#000;
+    // color:#fff;
+}
+.world, .prog {
+    background-color:$black;
+    // background-color:#FF00A9;
+    color:#FF00A9;
+    // color:#000;
+    // color:#fff;
+}
+.crossover, .anthem {
+    background-color:$black;
+    // background-color:#FE0060;
+    color:#FE0060;
+    // color:#000;
+    // color:#fff;
+}
+.techno {
+    background-color:$black;
+    // background-color:#FD0000;
+    color:#FD0000;
+    // color:#000;
+    // color:#fff;
+}
+.funk, .afro {
+    background-color:$black;
+    // background-color:#FF3C04;
+    color:#FF3C04;
+    // color:#000;
+    // color:#fff;
+}
+.dubstep, .retro {
+    background-color:$black;
+    // background-color:#FF6501;
+    color:#FF6501;
+    // color:#000;
+    // color:#fff;
+}
+.glitch, .funky {
+    background-color:$black;
+    // background-color:#FF9101;
+    color:#FF9101;
+    // color:#000;
+    // color:#fff;
+}
+.downbeat, .bit {
+    background-color:$black;
+    // background-color:#FCAF00;
+    color:#FCAF00;
+    // color:#000;
+    // color:#fff;
+}
+.reggae, .tribal {
+    background-color:$black;
+    // background-color:#FFD100;
+    color:#FFD100;
+    // color:#000;
+    // color:#fff;
+}
+.mash-up, .future {
+    background-color:$black;
+    // background-color:#FCFC00;
+    color:#FCFC00;
+    // color:#000;
+    // color:#fff;
+}
+.electro {
+    background-color:$black;
+    // background-color:#BCFD00;
+    color:#BCFD00;
+    // color:#000;
+    // color:#fff;
+}
+.soul, .latin {
+    background-color:$black;
+    // background-color:#7F0;
+    color:#7F0;
+    // color:#000;
+    // color:#fff;
+}
+.broken, .abstract {
+    background-color:$black;
+    // background-color:#23FF01;
+    color:#23FF01;
+    // color:#000;
+    // color:#fff;
+}
+.garage, .jazzy {
+    background-color:$black;
+    // background-color:#00FF71;
+    color:#00FF71;
+    // color:#000;
+    // color:#fff;
+}
+.ambient, .hard {
+    background-color:$black;
+    // background-color:#00FEBA;
+    color:#00FEBA;
+    // color:#000;
+    // color:#fff;
+}
+.jazz, .cosmic {
+    background-color:$black;
+    // background-color:#01FFE0;
+    color:#01FFE0;
+    // color:#000;
+    // color:#fff;
+}
+.eclectic, .balearic {
+    background-color:$black;
+    // background-color:#01F5FF;
+    color:#01F5FF;
+    // color:#000;
+    // color:#fff;
+}
+.trance {
+    background-color:$black;
+    // background-color:#01CFFE;
+    color:#01CFFE;
+    // color:#000;
+    // color:#fff;
+}
+.r-b, .dirty {
+    background-color:$black;
+    // background-color:#00A7FF;
+    color:#00A7FF;
+    // color:#000;
+    // color:#fff;
+}
+.drum-bass, .classic {
+    background-color:$black;
+    // background-color:#007eff;
+    color:#007eff;
+    // color:#000;
+    // color:#fff;
+}
+.scratch, .urban {
+    background-color:$black;
+    // background-color:#0053FE;
+    color:#0053FE;
+    // color:#000;
+    // color:#fff;
+}
+.noise, .dark {
+    background-color:$black;
+    // background-color:#0030fe;
+    color:#0030fe;
+    // color:#000;
+    // color:#fff;
+}
+.rock, .new {
+    background-color:$black;
+    // background-color:#0121F2;
+    color:#0121F2;
+    // color:#000;
+    // color:#fff;
+}
+.verbal, .deep {
+    background-color:$black;
+    // background-color:#0121F2;
+    color:#0121F2;
+    // color:#000;
+    // color:#fff;    
+}
