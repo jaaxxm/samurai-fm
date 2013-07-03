@@ -15,6 +15,10 @@ angular.module('samuraiFMApp', ['ui.bootstrap'])
         templateUrl: 'views/events.html',
         controller: 'EventsCtrl'
       })
+      .when('/mix', {
+        templateUrl: 'views/mix.html',
+        controller: 'MixCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

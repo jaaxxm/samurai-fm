@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: EventsCtrl', function () {
+describe('Controller: MixCtrl', function () {
 
   // load the controller's module
   beforeEach(module('samuraiFMApp'));
 
-  var EventsCtrl,
+  var MixCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    EventsCtrl = $controller('EventsCtrl', {
+    MixCtrl = $controller('MixCtrl', {
       $scope: scope
     });
   }));
