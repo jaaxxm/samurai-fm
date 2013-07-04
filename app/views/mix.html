@@ -1,3 +1,4 @@
+<!-- search filter -->
 <div class="row-fluid">
     <div class="span8">
         <!-- Search form -->
@@ -29,16 +30,16 @@
 </div>
 <div class="row-fluid">    
     <!-- Artist Info -->
-    <div class="span3">
+    <div class="span2">
 
         <img src="img/artist/th_artist.jpg" alt="">
-        <div class="flex mix-labels">
-            <span class="bg-electronica">Electronica</span> 
-            <span class="bg-ambient">Ambient</span> 
-            <span class="bg-eclectic">Eclectic</span> 
-        </div>    
 
         <h3>Animat</h3>
+        <p>
+            <span class="label electronica">Electronica</span> 
+            <span class="label ambient">Ambient</span> 
+            <span class="label eclectic">Eclectic</span> 
+        </p>
         <em class="meta">chilled beats and cinematic electronica</em>
         <p class="location">United Kingdom</p>
         <p>
@@ -77,29 +78,42 @@
 
     </div>
     <!--/span-->
-    <div class="span9">
+    <div class="span10">
         <!-- Mix Player -->
         <div class="mix-main">
-            <h2 class="mix-title clearfix"><i class="icon-star-empty"> </i>Animat - Sculptured in Space May 2013 <small class="pull-right">2 days</small></h2>            
+            <h2 class="mix-title clearfix"><i class="icon-star-empty"> </i>Animat - Sculptured in Space May 2013 <small class="pull-right">2 days</small></h2>
             <div class="player">
-                <div class="controls-holder">
-                    <div class="controls">
-                        <a href="" class="btn-play"><i class="icon-play"></i></a>
-                    </div>
-                    <div class="wave">
-                        <img src="img/wave/big.png" alt="">
-                    </div>
+                <div class="btn-group btn-group-vertical pull-left">
+                    <a tooltip-placement="top" tooltip="Add to Favorites" class="btn btn-inverse" href="#"><i class="icon-star-empty"></i></a>
+                    <a tooltip-placement="top" tooltip="Download" class="btn btn-inverse" href="#"><i class="icon-download"></i></a>
+                </div>
+                <div class="controls pull-left">
+                    <a href="" class="btn-play"><i class="icon-play"></i></a>
+                </div>
+                <div class="wave">
+                    <img src="img/wave/big.png" alt="">
+                </div>
+                <div class="btn-group btn-group-vertical pull-right">
+                    <a tooltip-placement="top" tooltip="Share" class="btn btn-inverse" href="#"><i class="icon-share"></i></a>
+                    <a tooltip-placement="top" tooltip="Embed" class="btn btn-inverse" href="#"><i class="icon-link"></i></a>
                 </div>
             </div>
-            <div class="flex mix-labels">
-                <span class="bg-electronica">Electronica</span> 
-                <span class="bg-downbeat">Downbeat</span> 
-                <span class="bg-eclectic">Eclectic</span> 
+            <div class="clearfix quick-stat">
+                <ul class="inline pull-left">
+                    <li><i class="icon-play"></i> 3,598</li>
+                    <li><i class="icon-star"></i> 8</li>
+                    <li><img src="img/like.png" alt=""></li>
+                </ul>
+                <ul class="inline pull-right">
+                    <li><span class="label electronica">Electronica</span></li>
+                    <li><span class="label downbeat">Downbeat</span></li>
+                    <li><span class="label eclectic">Eclectic</span></li>
+                </ul>
             </div>
         </div>
         <!-- Mix Details -->
         <div class="row-fluid">
-            <!-- Tracklist -->
+            <!-- Description -->
             <div class="span7">
                 <div class="well feature-descr">
                     <p>Sculptured in Space is a new DJ mix by Sheffield-based electronica duo Animat. </p>
@@ -116,10 +130,7 @@
 
                 <p><a href="#">www.animat.co.uk</a></p>
 
-            </div>
-            
-            <!-- Tracklist -->
-            <div class="span5">
+                <!-- Tracklist -->
                 <h3>Tracklist</h3>
                 <table class="table table-stripped table-condensed">
                     <tbody>
@@ -175,16 +186,40 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-
-        <!-- Mix Activity -->
-        <div class="row-fluid">
-            <div class="span7">
+            
+            <div class="span5">
+                <!-- Favourites -->
+                <h4 class="pull-left">
+                    Favourites <span class="badge">8</span>
+                </h4>
+                <hr />
+                <div class="row-fluid">
+                    <ul class="thumbnails">
+                        <li class="span1">
+                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                        </li>
+                        <li class="span1">
+                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                        </li>
+                        <li class="span1">
+                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                        </li>
+                        <li class="span1">
+                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                        </li>
+                        <li class="span1">
+                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                        </li>
+                        <li class="span1">
+                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>                
                 <!-- Shouts -->
                 <h3>Shouts</h3>
                 <form class="form-inline">
                     <textarea rows="2" placeholder="Leave a message..."></textarea>
-                    <button type="submit" class="btn btn-link"><i class="icon-bullhorn"></i></button>
+                    <button type="submit" class="btn btn-link"><i class="icon-comment-alt icon-2x"></i></button>
                 </form>
                 <div class="media shouts" ng-repeat="shout in shouts">
                     <a href="#" class="pull-left">
@@ -195,35 +230,6 @@
                         <p class="meta">{{shout.timestamp}}</p>
                         <div class="shout">{{shout.comment}}</div>
                     </div>
-                </div>
-            </div>
-            <div class="span5">
-                <!-- Favourites -->
-                <h4 class="pull-left">
-                    Favourites <span class="badge">8</span>
-                </h4>
-                <hr />
-                <div class="row-fluid">
-                    <ul class="thumbnails">
-                        <li class="span2">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span2">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span2">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span2">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span2">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span2">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
