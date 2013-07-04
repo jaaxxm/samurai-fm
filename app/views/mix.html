@@ -15,12 +15,12 @@
             </label>
         </form>
         <!-- Genre/Style selector -->
-        <p ng-show="genre">
+        <p class="labels" ng-show="genre">
             <a class="label" ng-class="genre | lowercase" ng-repeat="genre in genres" href="#">
                 {{genre}}
             </a>
         </p>
-        <p ng-show="style">
+        <p class="labels" ng-show="style">
             <a class="label" ng-class="style | lowercase" ng-repeat="style in styles" href="#">
                 {{style}}
             </a>
@@ -82,16 +82,17 @@
         <!-- Mix Player -->
         <div class="mix-main">
             <h2 class="mix-title clearfix"><i class="icon-star-empty"> </i>Animat - Sculptured in Space May 2013 <small class="pull-right">2 days</small></h2>
-            <div class="player">
+            <div class="player electronica">
                 <div class="btn-group btn-group-vertical pull-left">
                     <a tooltip-placement="top" tooltip="Add to Favorites" class="btn btn-inverse" href="#"><i class="icon-star-empty"></i></a>
                     <a tooltip-placement="top" tooltip="Download" class="btn btn-inverse" href="#"><i class="icon-download"></i></a>
                 </div>
                 <div class="controls pull-left">
-                    <a href="" class="btn-play"><i class="icon-play"></i></a>
+                    <a href="" class="btn btn-inverse btn-play"><i class="icon-play"></i></a>
                 </div>
                 <div class="wave">
                     <img src="img/wave/big.png" alt="">
+                    <progress percent="50" class="bg-electronica"></progress>
                 </div>
                 <div class="btn-group btn-group-vertical pull-right">
                     <a tooltip-placement="top" tooltip="Share" class="btn btn-inverse" href="#"><i class="icon-share"></i></a>

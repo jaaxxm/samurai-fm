@@ -1,0 +1,199 @@
+// Styles color table
+.house { 
+    color:#7100FF; 
+    a {color:#7100FF; }
+}
+.disco, .punk { 
+    color:#8E01FF; 
+    a {color:#8E01FF; }
+}
+.breaks, .minimal { 
+    color:#AD02FF; 
+    a {color:#AD02FF; }
+}
+.hip-hop, .hardcore { 
+    color:#D001FF; 
+    a {color:#D001FF; }
+}
+.electronica, .dub { 
+    color:#F500FE; 
+    a {color:#F500FE; }
+}
+.world, .prog { 
+    color:#FF00A9; 
+    a {color:#FF00A9; }
+}
+.crossover, .anthem { 
+    color:#FE0060; 
+    a {color:#FE0060; }
+}
+.techno { 
+    color:#FD0000; 
+    a {color:#FD0000; }
+}
+.funk, .afro { 
+    color:#FF3C04; 
+    a {color:#FF3C04; }
+}
+.dubstep, .retro { 
+    color:#FF6501; 
+    a {color:#FF6501; }
+}
+.glitch, .funky { 
+    color:#FF9101; 
+    a {color:#FF9101; }
+}
+.downbeat, .bit { 
+    color:#FCAF00; 
+    a {color:#FCAF00; }
+}
+.reggae, .tribal { 
+    color:#FFD100; 
+    a {color:#FFD100; }
+}
+.mash-up, .future { 
+    color:#FCFC00; 
+    a {color:#FCFC00; }
+}
+.electro { 
+    color:#BCFD00; 
+    a {color:#BCFD00; }
+}
+.soul, .latin { 
+    color:#7F0; 
+    a {color:#7F0; }
+}
+
+.broken, .abstract { 
+    color:#23FF01; 
+    a {color:#23FF01; }
+}
+.garage, .jazzy { 
+    color:#00FF71; 
+    a {color:#00FF71; }
+}
+.ambient, .hard { 
+    color:#00FEBA; 
+    a {color:#00FEBA; }
+}
+.jazz, .cosmic { 
+    color:#01FFE0; 
+    a {color:#01FFE0; }
+}
+.eclectic, .balearic { 
+    color:#01F5FF; 
+    a {color:#01F5FF; }
+}
+.trance { 
+    color:#01CFFE; 
+    a {color:#01CFFE; }
+}
+.r-b, .dirty { 
+    color:#00A7FF; 
+    a {color:#00A7FF; }
+}
+.drum-bass, .classic { 
+    color:#007eff; 
+    a {color:#007eff; }
+}
+.scratch, .urban { 
+    color:#0053FE; 
+    a {color:#0053FE; }
+}
+.noise, .dark { 
+    color:#0030fe; 
+    a {color:#0030fe; }
+}
+.rock, .new { 
+    color:#0121F2; 
+    a {color:#0121F2; }
+}
+.verbal, .deep { 
+    color:#0121F2; 
+    a {color:#0121F2; }
+}
+
+.bg-house { background-color:#7100FF; color:$black;
+    .bar { background-color:#7100FF;}
+}
+.bg-disco, .bg-punk { background-color:#8E01FF; color:$black;
+    .bar { background-color:#8E01FF;}
+}
+.bg-breaks, .bg-minimal { background-color:#AD02FF; color:$black;
+    .bar { background-color:#AD02FF;}
+}
+.bg-hip-hop, .bg-hardcore { background-color:#D001FF; color:$black;
+    .bar { background-color:#D001FF;}
+}
+.bg-electronica, .bg-dub { background-color:#F500FE; color:$black;
+    .bar { background-color:#F500FE;}
+}
+.bg-world, .bg-prog { background-color:#FF00A9; color:$black;
+    .bar { background-color:#FF00A9;}
+}
+.bg-crossover, .bg-anthem { background-color:#FE0060; color:$black;
+    .bar { background-color:#FE0060;}
+}
+.bg-techno { background-color:#FD0000; color:$black;
+    .bar { background-color:#FD0000;}
+}
+.bg-funk, .bg-afro { background-color:#FF3C04; color:$black;
+    .bar { background-color:#FF3C04;}
+}
+.bg-dubstep, .bg-retro { background-color:#FF6501; color:$black;
+    .bar { background-color:#FF6501;}
+}
+.bg-glitch, .bg-funky { background-color:#FF9101; color:$black;
+    .bar { background-color:#FF9101;}
+}
+.bg-downbeat, .bg-bit { background-color:#FCAF00; color:$black;
+    .bar { background-color:#FCAF00;}
+}
+.bg-reggae, .bg-tribal { background-color:#FFD100; color:$black;
+    .bar { background-color:#FFD100;}
+}
+.bg-mash-up, .bg-future { background-color:#FCFC00; color:$black;
+    .bar { background-color:#FCFC00;}
+}
+.bg-electro { background-color:#BCFD00; color:$black;
+    .bar { background-color:#BCFD00;}
+}
+.bg-soul, .bg-latin { background-color:#7F0; color:$black;
+    .bar { background-color:#7F0;}
+}
+.bg-broken, .bg-abstract { background-color:#23FF01; color:$black;
+    .bar { background-color:#23FF01;}
+}
+.bg-garage, .bg-jazzy { background-color:#00FF71; color:$black;
+    .bar { background-color:#00FF71;}
+}
+.bg-ambient, .bg-hard { background-color:#00FEBA; color:$black;
+    .bar { background-color:#00FEBA;}
+}
+.bg-jazz, .bg-cosmic { background-color:#01FFE0; color:$black;
+    .bar { background-color:#01FFE0;}
+}
+.bg-eclectic, .bg-balearic { background-color:#01F5FF; color:$black;
+    .bar { background-color:#01F5FF;}
+}
+.bg-trance { background-color:#01CFFE; color:$black;
+    .bar { background-color:#01CFFE;}
+}
+.bg-r-b, .bg-dirty { background-color:#00A7FF; color:$black;
+    .bar { background-color:#00A7FF;}
+}
+.bg-drum-bass, .bg-classic { background-color:#007eff; color:$black;
+    .bar { background-color:#007eff;}
+}
+.bg-scratch, .bg-urban { background-color:#0053FE; color:$black;
+    .bar { background-color:#0053FE;}
+}
+.bg-noise, .bg-dark { background-color:#0030fe; color:$black;
+    .bar { background-color:#0030fe;}
+}
+.bg-rock, .bg-new { background-color:#0121F2; color:$black;
+    .bar { background-color:#0121F2;}
+}
+.bg-verbal, .bg-deep { background-color:#0121F2; color:$black;
+    .bar { background-color:#0121F2;}
+}
