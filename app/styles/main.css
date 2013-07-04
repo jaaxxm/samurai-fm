@@ -6212,5 +6212,11 @@ body {
 .shouts {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px; }
+  .shouts .media-heading {
+    float: left; }
+  .shouts .meta {
+    float: right; }
+  .shouts .shout {
+    clear: both; }
 
 /*# sourceMappingURL=main.css.map */

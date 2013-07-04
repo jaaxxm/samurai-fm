@@ -140,4 +140,7 @@ body {
 .shouts {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+    .media-heading { float: left;}
+    .meta { float: right;}
+    .shout {clear: both;}
 }
