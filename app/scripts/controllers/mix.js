@@ -1,7 +1,39 @@
 'use strict';
 
 angular.module('samuraiFMApp')
-  .controller('MixCtrl', function ($scope) {
+    .controller('MixCtrl', function ($scope) {
+        $scope.shouts = [
+            {
+                member: 'Archibal',
+                timestamp: '10 hours',
+                comment: 'sublime'
+            },
+            {
+                member: 'garix',
+                timestamp: '1 month',
+                comment: 'old school // ... it\'s a pleasure!'
+            },
+            {
+                member: 'aaguirre',
+                timestamp: '1 month',
+                comment: 'relaxing :)'
+            },
+            {
+                member: 'synergist',
+                timestamp: '1 month',
+                comment: 'beautiful!'
+            },
+            {
+                member: 'olulo original',
+                timestamp: '1 month',
+                comment: 'Truly nice!'
+            },
+            {
+                member: 'Mark Hjorthoy',
+                timestamp: '1 month',
+                comment: 'Fantastic! What agreat mix of music gentlemen!'
+            }
+        ];        
         $scope.genres = [
             'House',
             'Disco',
@@ -58,4 +90,4 @@ angular.module('samuraiFMApp')
             'Minimal',
             'Punk'
         ];
-  });
+    });
