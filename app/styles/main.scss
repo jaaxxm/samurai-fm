@@ -77,6 +77,7 @@ body {
         line-height: 1.5;
         margin: 0;
         padding:0 10px;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
         @include gradient-horizontal-transfluent();
     }
     .feature-info {
@@ -173,7 +174,7 @@ body {
     form { width: 100%;}
     textarea {width: 82%;}
 }
-
+.quick-stat {margin-top: 10px;}
 #mix-info {
     // Actual tabs (as links)
     .nav-tabs > li > a {
@@ -202,7 +203,7 @@ body {
 }
 
 table.tracklist tbody > tr:first-child td {border-top:none; border-bottom:none;}
-// Favourites
+// Comments list
 .shouts {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px; 
@@ -210,7 +211,6 @@ table.tracklist tbody > tr:first-child td {border-top:none; border-bottom:none;}
     .meta {float: right; }
     .shout {clear: both; }
 }
-
 // Favourites
 ul.favorites {
     margin-left: 5px;
@@ -220,7 +220,7 @@ ul.favorites {
         line-height: 15px;
         a {
             display: inline-block;
-            @include square (15px);
+            @include square (18px);
         }
     }
     img {vertical-align: middle;}
