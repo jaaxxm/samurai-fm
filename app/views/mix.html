@@ -43,7 +43,7 @@
         <em class="meta">chilled beats and cinematic electronica</em>
         <p class="location">United Kingdom</p>
         <p>
-            <a class="btn btn-small" href="#"><i class="icon-plus"></i> Follow</a> 
+            <a class="btn btn-small btn-inverse" href="#"><i class="icon-plus"></i> Follow</a> 
             <img src="img/like.png" alt="">
         </p>
 
@@ -71,16 +71,35 @@
                 </div>
             </div>
             <div class="comments electronica">
-                <a class="btn btn-mini btn-inverse pull-left" href="#">Add Comment</a>
+                <button class="btn btn-mini btn-inverse pull-left electronica" href="#"
+                 ng-click="isCollapsed = !isCollapsed">
+                Add Comment
+                </button>
                 <div class="comments-holder">
-                    <div class="comments-timeline" style="border-top:1px solid #B700BB; border-bottom:1px solid #B700BB">
-                        <a href="#" class="comment">
+                    <div class="comments-timeline">
+                        <a href="#" class="comment" style="left:5%">
                             <img src="img/members/thumb.jpg" alt="">
                         </a>
+                        <a href="#" class="comment" style="left:15%">
+                            <img src="img/members/thumb.jpg" alt="">
+                        </a>
+                        <a href="#" class="comment" style="left:45%">
+                            <img src="img/members/thumb.jpg" alt="">
+                        </a>
+                        <a href="#" class="comment" style="left:75%">
+                            <img src="img/members/thumb.jpg" alt="">
+                        </a>                        
                     </div>
                 </div>
-                <a tooltip-placement="top" tooltip="View All Comments" class="btn btn-mini btn-inverse pull-right" href="#"><i class="icon-comment"></i></a>   
+                <a tooltip-placement="top" tooltip="View All Comments" class="btn btn-mini btn-inverse pull-right" href="#mix-info"><i class="icon-comment"></i></a>   
             </div>
+            <div class="add-comment" collapse="isCollapsed">
+                <form class="form-inline ">
+                    <img class="pull-left" src="img/members/thumb.jpg" alt="">
+                    <textarea placeholder="Leave a message..."></textarea>
+                    <button type="submit" class="btn btn-link electronica">Add</button>
+                </form>                
+            </div>            
             <div class="clearfix quick-stat">
                 <ul class="inline pull-left">
                     <li><i class="icon-play"></i> 3,598</li>
@@ -117,27 +136,15 @@
                     <li>
                         <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
                     </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>                    
                 </ul>
             </div>
         </div>
-
-        <!-- Comments
-        <h3>Comments</h3>
-        <form class="form-inline">
-            <textarea rows="2" placeholder="Leave a message..."></textarea>
-            <button type="submit" class="btn btn-link"><i class="icon-comment-alt icon-2x"></i></button>
-        </form>
-        <div class="media shouts" ng-repeat="shout in shouts">
-            <a href="#" class="pull-left">
-                <img src="img/members/thumb.jpg" alt="">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">{{shout.member}}</h4> 
-                <p class="meta">{{shout.timestamp}}</p>
-                <div class="shout">{{shout.comment}}</div>
-            </div>
-        </div>
-         -->
 
         <!-- Mix Details -->
         <div class="row-fluid">
@@ -153,13 +160,13 @@
 
                 <p><a href="#">www.animat.co.uk</a></p>
 
-                <tabset>
+                <tabset id="mix-info">
                     <tab>
                         <tab-heading>
-                            <i class="icon-reorder"></i> Tracklist
+                            <i class="icon-reorder electronica"></i> Tracklist
                         </tab-heading>
                         <!-- Tracklist -->
-                        <table class="table table-stripped table-condensed">
+                        <table class="table table-stripped table-condensed tracklist">
                             <tbody>
                                 <tr>
                                     <td>1.</td>
@@ -215,13 +222,28 @@
                     </tab>
                     <tab>
                         <tab-heading>
-                            <i class="icon-bar-chart"></i> Plays: 3,520
+                            <i class="icon-comments electronica"></i> Comments: 8
+                        </tab-heading>
+                        <div class="media shouts" ng-repeat="shout in shouts">
+                            <a href="#" class="pull-left">
+                                <img src="img/members/thumb.jpg" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{shout.member}}</h4> 
+                                <p class="meta">{{shout.timestamp}}</p>
+                                <div class="shout">{{shout.comment}}</div>
+                            </div>
+                        </div>
+                    </tab>                    
+                    <tab>
+                        <tab-heading>
+                            <i class="icon-bar-chart electronica"></i> Plays: 3,520
                         </tab-heading>
                         <img src="img/mix/analytics.png" alt="">
                     </tab>
                     <tab>
                         <tab-heading>
-                            <i class="icon-globe"></i> Heat Map
+                            <i class="icon-globe electronica"></i> Heat Map
                         </tab-heading>
                         <img src="img/mix/heatmap.png" alt="">
                     </tab>    
@@ -230,8 +252,14 @@
             </div>
             
             <div class="span5">
-                <h3>Featured in</h3>
-                <img src="img/featured/5.jpg" alt="">
+                <h3>Featured in:</h3>
+                <div class="feature-top">
+                    <h4 class="feature-title">Animat - Sculptured in Space mix</h4>
+                    <img src="img/featured/5.jpg" alt="">
+                </div>
+
+                <h3>Related Artists</h3>
+
             </div>
         </div>
 

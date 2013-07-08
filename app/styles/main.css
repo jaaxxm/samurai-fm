@@ -2023,8 +2023,7 @@ button.close {
   vertical-align: middle;
   cursor: pointer;
   /*   @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75)); */
-  /*   border: 1px solid $btnBorder; */
-  border: 1px solid #B700BB;
+  border: 1px solid #cccccc;
   *border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2036,9 +2035,11 @@ button.close {
   .btn:first-child {
     *margin-left: 0; }
   .btn:hover, .btn:focus {
-    color: #333333;
     text-decoration: none;
+    /*
+    color: $grayDark;
     background-position: 0 -15px;
+    */
     -webkit-transition: background-position 0.1s linear;
     -moz-transition: background-position 0.1s linear;
     -o-transition: background-position 0.1s linear;
@@ -6144,6 +6145,7 @@ body {
     width: 100%;
     line-height: 1.5;
     margin: 0;
+    padding: 0 10px;
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) -20%, transparent 100%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(-20%, rgba(0, 0, 0, 0.85)), color-stop(100%, transparent));
@@ -6182,8 +6184,8 @@ body {
 .regular-content {
   min-height: 80px; }
 
-.player, .quick-stat {
-  margin-bottom: 20px; }
+.player.electronica .btn {
+  border: 1px solid #F500FE; }
 
 .player {
   position: relative;
@@ -6209,6 +6211,73 @@ body {
     height: 54px;
     width: 100%; }
 
+.comments {
+  height: 24px;
+  position: relative;
+  top: -2px; }
+  .comments > .pull-left {
+    width: 99px;
+    position: relative;
+    z-index: 4;
+    border: 1px solid #F500FE; }
+  .comments > .pull-right {
+    width: 25px;
+    position: relative;
+    z-index: 4;
+    border: 1px solid #F500FE; }
+
+.comments-holder {
+  position: absolute;
+  z-index: 3;
+  padding: 0 40px 0 100px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.comments-timeline {
+  border-top: 1px solid #B700BB;
+  border-bottom: 1px solid #B700BB;
+  height: 20px;
+  position: relative; }
+  .comments-timeline a {
+    top: 0;
+    position: absolute;
+    width: 18px;
+    height: 18px; }
+
+.comment img {
+  vertical-align: top; }
+
+.add-comment form {
+  width: 100%; }
+.add-comment textarea {
+  width: 82%; }
+
+#mix-info .nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  color: white; }
+  #mix-info .nav-tabs > li > a:hover, #mix-info .nav-tabs > li > a:focus {
+    background: #222222;
+    border-bottom: 1px solid #ddd; }
+#mix-info .nav-tabs > .active > a,
+#mix-info .nav-tabs > .active > a:hover,
+#mix-info .nav-tabs > .active > a:focus {
+  background-color: #333333;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default; }
+
+table.tracklist tbody > tr:first-child td {
+  border-top: none;
+  border-bottom: none; }
+
 .shouts {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px; }
@@ -6218,5 +6287,18 @@ body {
     float: right; }
   .shouts .shout {
     clear: both; }
+
+ul.favorites {
+  margin-left: 5px; }
+  ul.favorites > li {
+    padding-left: 0;
+    padding-right: 5px;
+    line-height: 15px; }
+    ul.favorites > li a {
+      display: inline-block;
+      width: 15px;
+      height: 15px; }
+  ul.favorites img {
+    vertical-align: middle; }
 
 /*# sourceMappingURL=main.css.map */

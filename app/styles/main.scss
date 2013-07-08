@@ -76,6 +76,7 @@ body {
         width: 100%;
         line-height: 1.5;
         margin: 0;
+        padding:0 10px;
         @include gradient-horizontal-transfluent();
     }
     .feature-info {
@@ -107,6 +108,9 @@ body {
 }
 
 // Player
+.player.electronica {
+    .btn { border:1px solid #F500FE; }
+}
 .player {
     position: relative;
     height: 60px;
@@ -135,27 +139,77 @@ body {
 // Comments
 .comments {
     height: 24px;
-    position: relative;    
-    > .btn:first-child {
-        width: 85px;
+    position: relative;
+    top:-2px;
+    > .pull-left { 
+        width: 99px; position: relative; z-index: 4; border:1px solid #F500FE;
+
+    }
+    > .pull-right {
+        width: 25px; position: relative; z-index: 4; border:1px solid #F500FE;
     }
 
 }
 .comments-holder {
     position: absolute;
-    margin: 0 40px 0 100px;
+    z-index: 3;
+    padding: 0 40px 0 100px;
     width:100%;
+    @include box-sizing(border-box);
 }
 .comments-timeline {
-    height: 24px;    
+    border-top:1px solid #B700BB; 
+    border-bottom:1px solid #B700BB;
+    height: 20px;    
     position: relative;
     a {
         top: 0;
         position: absolute;
-        @include square (15px);
+        @include square (18px);
     }
 }
+.comment img {vertical-align: top;}
+.add-comment {
+    form { width: 100%;}
+    textarea {width: 82%;}
+}
 
+#mix-info {
+    // Actual tabs (as links)
+    .nav-tabs > li > a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        line-height: $baseLineHeight;
+        border: 1px solid transparent;
+        @include border-radius(4px 4px 0 0);
+        color: $white;
+        &:hover,
+        &:focus {
+            background: $grayDarker;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    // Active state, and it's :hover/:focus to override normal :hover/:focus
+    .nav-tabs > .active > a,
+    .nav-tabs > .active > a:hover,
+    .nav-tabs > .active > a:focus {
+        // color: $gray;
+        background-color: $bodyBackground;
+        border: 1px solid #ddd;
+        border-bottom-color: transparent;
+        cursor: default;
+    }    
+}
+
+table.tracklist tbody > tr:first-child td {border-top:none; border-bottom:none;}
+// Favourites
+.shouts {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px; 
+    .media-heading {float: left; }
+    .meta {float: right; }
+    .shout {clear: both; }
+}
 
 // Favourites
 ul.favorites {

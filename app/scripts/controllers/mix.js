@@ -2,6 +2,7 @@
 
 angular.module('samuraiFMApp')
     .controller('MixCtrl', function ($scope) {
+        $scope.isCollapsed = true;
         $scope.shouts = [
             {
                 member: 'Archibal',
