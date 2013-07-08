@@ -47,35 +47,6 @@
             <img src="img/like.png" alt="">
         </p>
 
-        <!-- Followers -->
-        <h4 class="pull-left">
-            Followers <span class="badge">8</span>
-        </h4>
-
-        <hr />
-        <div class="row-fluid">
-            <ul class="thumbnails">
-                <li class="span2">
-                    <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                </li>
-                <li class="span2">
-                    <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                </li>
-                <li class="span2">
-                    <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                </li>
-                <li class="span2">
-                    <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                </li>
-                <li class="span2">
-                    <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                </li>
-                <li class="span2">
-                    <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                </li>
-            </ul>
-        </div>
-
     </div>
     <!--/span-->
     <div class="span10">
@@ -99,6 +70,17 @@
                     <a tooltip-placement="top" tooltip="Embed" class="btn btn-inverse" href="#"><i class="icon-link"></i></a>
                 </div>
             </div>
+            <div class="comments electronica">
+                <a class="btn btn-mini btn-inverse pull-left" href="#">Add Comment</a>
+                <div class="comments-holder">
+                    <div class="comments-timeline" style="border-top:1px solid #B700BB; border-bottom:1px solid #B700BB">
+                        <a href="#" class="comment">
+                            <img src="img/members/thumb.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <a tooltip-placement="top" tooltip="View All Comments" class="btn btn-mini btn-inverse pull-right" href="#"><i class="icon-comment"></i></a>   
+            </div>
             <div class="clearfix quick-stat">
                 <ul class="inline pull-left">
                     <li><i class="icon-play"></i> 3,598</li>
@@ -111,16 +93,56 @@
                     <li><span class="label eclectic">Eclectic</span></li>
                 </ul>
             </div>
+            <!-- Favourites -->
+            <div class="clearfix">
+                <strong class="pull-left">
+                    Favourites: 
+                </strong>
+                <ul class="pull-left inline favorites">
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <!-- Comments
+        <h3>Comments</h3>
+        <form class="form-inline">
+            <textarea rows="2" placeholder="Leave a message..."></textarea>
+            <button type="submit" class="btn btn-link"><i class="icon-comment-alt icon-2x"></i></button>
+        </form>
+        <div class="media shouts" ng-repeat="shout in shouts">
+            <a href="#" class="pull-left">
+                <img src="img/members/thumb.jpg" alt="">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">{{shout.member}}</h4> 
+                <p class="meta">{{shout.timestamp}}</p>
+                <div class="shout">{{shout.comment}}</div>
+            </div>
+        </div>
+         -->
+
         <!-- Mix Details -->
         <div class="row-fluid">
             <!-- Description -->
             <div class="span7">
-                <div class="well feature-descr">
-                    <p>Sculptured in Space is a new DJ mix by Sheffield-based electronica duo Animat. </p>
-                    <p>Mark Daly and Michael Harding - aka The Only Michael – have been working together since 2004 and have released two albums and six EPs of their own material on labels including Dubmission, Bloodsugar, Big Chill and Klassik Lounge, as well as remixing for artists including Deep Dive Corp, Pitch Black and DF Tram.</p>
-                    <p>'Sculptured in Space' focuses on tracks from the 'Stargazing Remixed' project (volumes 1 and 2 released spring 2013).</p>
-                </div>
                 <h3>Animat - Sculptured in Space May 2013</h3>
                 <p>Steeped in the tradition of Sheffields world-leading electronic music scene, Mark Daly and Michael Harding - aka The Only Michael  have been working together since 2004 and have released two albums and six EPs of their own material on labels including Dubmission, Blodusgar, Big Chill and Klasik Lounge, as well as remixing for artists including
                 Deep Dive Corp, Pitch Black and DF Tram.</p>
@@ -131,121 +153,85 @@
 
                 <p><a href="#">www.animat.co.uk</a></p>
 
-                <!-- Tracklist -->
-                <h3>Tracklist</h3>
-                <table class="table table-stripped table-condensed">
-                    <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>The American Dollar - Anything You Synthesise (Ambient)</td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Animat - Lost in the Valley of the Scintilla Strings (Misled Convoy Mix )</td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>Skalpel - Sculpture</td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Easy Star All Stars - First Light (Dubmatix Remix)</td>
-                        </tr>
-                        <tr>
-                            <td>5.</td>
-                            <td>Animat - Liquid Fuel (Riccicomoto, Lost in Jazz Session)</td>
-                        </tr>
-                        <tr>
-                            <td>6.</td>
-                            <td>Emancipator - Afterglow</td>
-                        </tr>
-                        <tr>
-                            <td>7.</td>
-                            <td>Nick Drake - Northern Sky</td>
-                        </tr>
-                        <tr>
-                            <td>8.</td>
-                            <td>The Love Theme - Freedom (Mark Hjorthoy remix)</td>
-                        </tr>
-                        <tr>
-                            <td>9.</td>
-                            <td>DFRNT - Turning Back</td>
-                        </tr>
-                        <tr>
-                            <td>10.</td>
-                            <td>Olafur Arnalds - Only The Winds</td>
-                        </tr>
-                        <tr>
-                            <td>11.</td>
-                            <td>Minke - The Jetpack (Animat remix)</td>
-                        </tr>
-                        <tr>
-                            <td>12.</td>
-                            <td>Animat - Stargazing (The Only Michael's High and Glassy Mix)</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
+                <tabset>
+                    <tab>
+                        <tab-heading>
+                            <i class="icon-reorder"></i> Tracklist
+                        </tab-heading>
+                        <!-- Tracklist -->
+                        <table class="table table-stripped table-condensed">
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>The American Dollar - Anything You Synthesise (Ambient)</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Animat - Lost in the Valley of the Scintilla Strings (Misled Convoy Mix )</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Skalpel - Sculpture</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Easy Star All Stars - First Light (Dubmatix Remix)</td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>Animat - Liquid Fuel (Riccicomoto, Lost in Jazz Session)</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>Emancipator - Afterglow</td>
+                                </tr>
+                                <tr>
+                                    <td>7.</td>
+                                    <td>Nick Drake - Northern Sky</td>
+                                </tr>
+                                <tr>
+                                    <td>8.</td>
+                                    <td>The Love Theme - Freedom (Mark Hjorthoy remix)</td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>DFRNT - Turning Back</td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>Olafur Arnalds - Only The Winds</td>
+                                </tr>
+                                <tr>
+                                    <td>11.</td>
+                                    <td>Minke - The Jetpack (Animat remix)</td>
+                                </tr>
+                                <tr>
+                                    <td>12.</td>
+                                    <td>Animat - Stargazing (The Only Michael's High and Glassy Mix)</td>
+                                </tr>
+                        
+                            </tbody>
+                        </table>
+                    </tab>
+                    <tab>
+                        <tab-heading>
+                            <i class="icon-bar-chart"></i> Plays: 3,520
+                        </tab-heading>
+                        <img src="img/mix/analytics.png" alt="">
+                    </tab>
+                    <tab>
+                        <tab-heading>
+                            <i class="icon-globe"></i> Heat Map
+                        </tab-heading>
+                        <img src="img/mix/heatmap.png" alt="">
+                    </tab>    
+                </tabset>
+
             </div>
             
             <div class="span5">
-                <!-- Favourites -->
-                <h4 class="pull-left">
-                    Favourites <span class="badge">8</span>
-                </h4>
-                <hr />
-                <div class="row-fluid">
-                    <ul class="thumbnails">
-                        <li class="span1">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span1">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span1">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span1">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span1">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                        <li class="span1">
-                            <a href="#"><img src="img/members/thumb.jpg" alt=""></a>
-                        </li>
-                    </ul>
-                </div>                
-                <!-- Shouts -->
-                <h3>Shouts</h3>
-                <form class="form-inline">
-                    <textarea rows="2" placeholder="Leave a message..."></textarea>
-                    <button type="submit" class="btn btn-link"><i class="icon-comment-alt icon-2x"></i></button>
-                </form>
-                <div class="media shouts" ng-repeat="shout in shouts">
-                    <a href="#" class="pull-left">
-                        <img src="img/members/thumb.jpg" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">{{shout.member}}</h4> 
-                        <p class="meta">{{shout.timestamp}}</p>
-                        <div class="shout">{{shout.comment}}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mix Analitics -->
-        <div class="row-fluid">
-            <div class="span6">
-                <!-- Mix Plays -->
-                <h3 class="clearfix">Plays: 3,520</h3>
-                <img src="img/mix/analytics.png" alt="">
-            </div>
-            <div class="span6">
-                <!-- Mix Map -->
-                <h3>Heat Map</h3>
-                <img src="img/mix/heatmap.png" alt="">
+                <h3>Featured in</h3>
+                <img src="img/featured/5.jpg" alt="">
             </div>
         </div>
 

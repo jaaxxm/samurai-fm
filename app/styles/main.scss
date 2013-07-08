@@ -107,9 +107,6 @@ body {
 }
 
 // Player
-.player, .quick-stat {    
-    margin-bottom: $baseLineHeight;
-}
 .player {
     position: relative;
     height: 60px;
@@ -135,12 +132,42 @@ body {
         width: 100%;
     }
 }
+// Comments
+.comments {
+    height: 24px;
+    position: relative;    
+    > .btn:first-child {
+        width: 85px;
+    }
 
-//Shouts
-.shouts {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    .media-heading { float: left;}
-    .meta { float: right;}
-    .shout {clear: both;}
+}
+.comments-holder {
+    position: absolute;
+    margin: 0 40px 0 100px;
+    width:100%;
+}
+.comments-timeline {
+    height: 24px;    
+    position: relative;
+    a {
+        top: 0;
+        position: absolute;
+        @include square (15px);
+    }
+}
+
+
+// Favourites
+ul.favorites {
+    margin-left: 5px;
+    > li {
+        padding-left: 0;
+        padding-right: 5px;
+        line-height: 15px;
+        a {
+            display: inline-block;
+            @include square (15px);
+        }
+    }
+    img {vertical-align: middle;}
 }
