@@ -535,7 +535,6 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-weight: normal;
-    line-height: 1;
     color: #999999; }
 
 h1,
@@ -547,7 +546,7 @@ h1 {
   font-size: 38.5px; }
 
 h2 {
-  font-size: 31.5px; }
+  font-size: 26.6px; }
 
 h3 {
   font-size: 24.5px; }
@@ -2023,7 +2022,7 @@ button.close {
   vertical-align: middle;
   cursor: pointer;
   /*   @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75)); */
-  border: 1px solid #cccccc;
+  border: 1px solid #1a1a1a;
   *border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -4787,12 +4786,6 @@ a [class*=" icon-"] {
     -moz-border-radius: 7px;
     border-radius: 7px; }
 
-.pull-right {
-  float: right; }
-
-.pull-left {
-  float: left; }
-
 [class^="icon-"].pull-left,
 [class*=" icon-"].pull-left {
   margin-right: .3em; }
@@ -6103,7 +6096,7 @@ hr {
 
 .flex {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center; }
   .flex > * {
     flex: 1; }
@@ -6168,10 +6161,13 @@ body {
     width: 100%; }
 
 .feature-labels {
-  font-size: 11px;
-  line-height: 1.5; }
+  margin-top: 2px;
+  height: 32px;
+  width: 60px; }
   .feature-labels span {
-    padding: 0 5px; }
+    margin: 1px 0 0; }
+    .feature-labels span:first-child {
+      margin-top: 0; }
 
 .regular-link {
   float: left;
@@ -6185,29 +6181,43 @@ body {
 .regular-content {
   min-height: 80px; }
 
+.meta h2 {
+  margin: 0 10px 10px;
+  line-height: 40px; }
+.meta small {
+  line-height: 40px;
+  color: #999; }
+
 .player.electronica .btn {
   border: 1px solid #F500FE; }
 
 .player {
   position: relative;
-  height: 60px; }
+  height: 80px; }
 
 .controls {
   background-color: #000;
   text-align: center;
-  width: 60px;
-  height: 60px; }
+  width: 60px; }
   .controls a {
     width: 58px;
-    height: 57px;
+    height: 58px;
     padding: 0; }
   .controls i {
     line-height: 60px; }
 
+.label-stat {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: normal;
+  display: block;
+  background: #222222;
+  border: 1px solid #111; }
+
 .wave {
   position: absolute;
-  top: 0;
-  margin: 0 40px 0 100px; }
+  margin: 0 60px;
+  cursor: pointer; }
   .wave img {
     height: 54px;
     width: 100%; }
@@ -6215,22 +6225,12 @@ body {
 .comments {
   height: 24px;
   position: relative;
-  top: -2px; }
-  .comments > .pull-left {
-    width: 99px;
-    position: relative;
-    z-index: 4;
-    border: 1px solid #F500FE; }
-  .comments > .pull-right {
-    width: 25px;
-    position: relative;
-    z-index: 4;
-    border: 1px solid #F500FE; }
+  top: -21px; }
 
 .comments-holder {
   position: absolute;
   z-index: 3;
-  padding: 0 40px 0 100px;
+  padding: 0 60px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6238,7 +6238,6 @@ body {
 
 .comments-timeline {
   border-top: 1px solid #B700BB;
-  border-bottom: 1px solid #B700BB;
   height: 20px;
   position: relative; }
   .comments-timeline a {
@@ -6253,7 +6252,12 @@ body {
 .add-comment form {
   width: 100%; }
 .add-comment textarea {
-  width: 82%; }
+  width: 80%;
+  float: left; }
+.add-comment label {
+  font-size: 12px; }
+.add-comment .btn {
+  margin: 5px 0; }
 
 .quick-stat {
   margin-top: 10px; }
@@ -6282,6 +6286,25 @@ table.tracklist tbody > tr:first-child td {
   border-top: none;
   border-bottom: none; }
 
+.shouts-filter .nav {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle; }
+  .shouts-filter .nav > li {
+    font-size: 12px;
+    line-height: 20px; }
+    .shouts-filter .nav > li a {
+      padding: 4px 6px;
+      color: #F500FE; }
+      .shouts-filter .nav > li a:hover {
+        background: #222; }
+    .shouts-filter .nav > li.active a {
+      background: #111;
+      color: #aaa; }
+.shouts-filter strong {
+  line-height: 25px;
+  display: inline-block; }
+
 .shouts {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px; }
@@ -6299,7 +6322,9 @@ ul.favorites {
     padding-right: 5px;
     line-height: 15px; }
     ul.favorites > li a {
-      display: inline-block;
+      display: inline-block; }
+    ul.favorites > li img {
+      margin-right: 5px;
       width: 18px;
       height: 18px; }
   ul.favorites img {

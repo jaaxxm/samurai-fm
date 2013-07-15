@@ -8,7 +8,7 @@ hr {clear: both;}
 // Flex globals
 .flex {
     display:flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     > * {
         flex:1;
@@ -91,9 +91,13 @@ body {
     }
 }
 .feature-labels {
-    font-size: 11px;
-    line-height: 1.5;
-    span {padding: 0 5px;}
+    margin-top: 2px;
+    height:32px;
+    width:60px;
+    span {
+        margin: 1px 0 0;
+        &:first-child {margin-top: 0;}
+    }
 }
 // REGULAR
 .regular-link {
@@ -108,30 +112,51 @@ body {
     min-height: 80px;
 }
 
+//  Meta
+.meta {
+    h2 {
+        margin: 0 10px ($baseLineHeight / 2);
+        line-height: $baseLineHeight * 2;
+    }
+    small {
+        line-height: $baseLineHeight * 2;
+        color: #999;
+    }
+}
+
 // Player
 .player.electronica {
     .btn { border:1px solid #F500FE; }
 }
 .player {
     position: relative;
-    height: 60px;
+    height: 80px;
+//    z-index: 4;
 }
 .controls {
     background-color: #000;
     text-align: center;
-    @include square(60px);
+    width:60px;
     a {
-        @include size(57px, 58px);
+        @include square(58px);
         padding: 0;
     }
     i {
         line-height: 60px;
     }
 }
+.label-stat {
+    font-size: $baseFontSize - 3;
+    color: #aaa;
+    font-weight: normal;
+    display: block;
+    background: $grayDarker;
+    border: 1px solid #111;
+}
 .wave {
     position: absolute;
-    top: 0;
-    margin: 0 40px 0 100px;
+    margin: 0 60px;
+    cursor: pointer;
     img {
         height: 54px;
         width: 100%;
@@ -141,26 +166,17 @@ body {
 .comments {
     height: 24px;
     position: relative;
-    top:-2px;
-    > .pull-left { 
-        width: 99px; position: relative; z-index: 4; border:1px solid #F500FE;
-
-    }
-    > .pull-right {
-        width: 25px; position: relative; z-index: 4; border:1px solid #F500FE;
-    }
-
+    top:-21px;
 }
 .comments-holder {
     position: absolute;
     z-index: 3;
-    padding: 0 40px 0 100px;
+    padding: 0 60px;
     width:100%;
     @include box-sizing(border-box);
 }
 .comments-timeline {
     border-top:1px solid #B700BB; 
-    border-bottom:1px solid #B700BB;
     height: 20px;    
     position: relative;
     a {
@@ -172,7 +188,9 @@ body {
 .comment img {vertical-align: top;}
 .add-comment {
     form { width: 100%;}
-    textarea {width: 82%;}
+    textarea {width: 80%; float: left;}
+    label { font-size: 12px;}
+    .btn { margin: $baseLineHeight / 4 0;}
 }
 .quick-stat {margin-top: 10px;}
 #mix-info {
@@ -204,6 +222,31 @@ body {
 
 table.tracklist tbody > tr:first-child td {border-top:none; border-bottom:none;}
 // Comments list
+.shouts-filter {
+    .nav {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+        
+        > li {
+            font-size: 12px;
+            line-height: 20px;
+            a {
+                padding: 4px 6px;
+                color: #F500FE;
+                &:hover {background: #222;}
+            }
+            &.active a {
+                background: #111;
+                color: #aaa;
+            }
+        }
+    }
+    strong { 
+        line-height: 25px;
+        display: inline-block;
+    }
+}
 .shouts {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px; 
@@ -220,8 +263,11 @@ ul.favorites {
         line-height: 15px;
         a {
             display: inline-block;
-            @include square (18px);
         }
+        img { 
+            margin-right:5px;
+            @include square (18px);
+        }        
     }
     img {vertical-align: middle;}
 }

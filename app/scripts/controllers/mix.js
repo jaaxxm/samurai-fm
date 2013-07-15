@@ -6,89 +6,33 @@ angular.module('samuraiFMApp')
         $scope.shouts = [
             {
                 member: 'Archibal',
-                timestamp: '10 hours',
+                timestamp: '00:02',
                 comment: 'sublime'
             },
             {
                 member: 'garix',
-                timestamp: '1 month',
+                timestamp: '00:12',
                 comment: 'old school // ... it\'s a pleasure!'
             },
             {
                 member: 'aaguirre',
-                timestamp: '1 month',
+                timestamp: '16:15',
                 comment: 'relaxing :)'
             },
             {
                 member: 'synergist',
-                timestamp: '1 month',
+                timestamp: '21:15',
                 comment: 'beautiful!'
             },
             {
                 member: 'olulo original',
-                timestamp: '1 month',
+                timestamp: '22:15',
                 comment: 'Truly nice!'
             },
             {
                 member: 'Mark Hjorthoy',
-                timestamp: '1 month',
+                timestamp: '40:02',
                 comment: 'Fantastic! What agreat mix of music gentlemen!'
             }
-        ];        
-        $scope.genres = [
-            'House',
-            'Disco',
-            'Breaks',
-            'Hip-Hop',
-            'Electronica',
-            'World',
-            'Crossover',
-            'Techno',
-            'Funk',
-            'Dubstep',
-            'Glitch',
-            'Downbeat',
-            'Reggae',
-            'Mash-Up',
-            'Electro',
-            'Soul',
-            'Broken',
-            'Garage',
-            'Ambient',
-            'Jazz',
-            'Eclectic',
-            'Trance',
-            'R-B',
-            'Drum-Bass',
-            'Scratch',
-            'Noise',
-            'Rock',
-            'Verbal',
-        ];
-        $scope.styles = [
-            'Deep',
-            'New',
-            'Dark',
-            'Urban',
-            'Classic',
-            'Dirty',
-            'Balearic',
-            'Cosmic',
-            'Hard',
-            'Jazzy',
-            'Abstract',
-            'Latin',
-            'Future',
-            'Tribal',
-            'Bit',
-            'Funky',
-            'Retro',
-            'Afro',
-            'Anthem',
-            'Prog',
-            'Dub',
-            'Hardcore',
-            'Minimal',
-            'Punk'
         ];
     });
