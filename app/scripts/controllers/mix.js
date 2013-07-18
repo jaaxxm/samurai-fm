@@ -2,7 +2,18 @@
 
 angular.module('samuraiFMApp')
     .controller('MixCtrl', function ($scope) {
+        
+        $scope.statBlock = false;
+        $scope.favsBlock = false;
+        
+        $scope.toggleBlock = function(block, $event) {
+            $scope.block = true;
+            $event.preventDefault();
+        }
+
+
         $scope.isCollapsed = true;
+
         $scope.shouts = [
             {
                 member: 'Archibal',

@@ -1,254 +1,286 @@
 <div class="row-fluid">    
-    <!-- Artist Info -->
-    <div class="span2">
-        <img src="img/artist/th_artist.jpg" alt="">
-        <h3>Animat</h3>
-        <p>
-            <span class="label electronica">Electronica</span> 
-            <span class="label ambient">Ambient</span> 
-            <span class="label eclectic">Eclectic</span> 
-        </p>
-        <p>
-            <em class="meta">chilled beats and cinematic electronica</em>
-        </p>
-        <p class="location">United Kingdom</p>
-        <p>
-            <a class="btn btn-small" href="#"><i class="icon-plus"></i> Follow</a> 
-            <img src="img/like.png" alt="">
-        </p>
-
+  <!-- Artist Info -->
+  <div class="span2 mix-artist">
+    <h3>Animat</h3>
+    <div class="flex-row artist-labels pull-left">
+      <span class="flex-item bg-electronica"></span> 
+      <span class="flex-item bg-ambient"></span> 
+      <span class="flex-item bg-eclectic"></span> 
     </div>
-    <!--/span-->
-    <div class="span10">
-        <!-- Mix Player -->
-        <div class="mix-main">
-            <div class="meta clearfix">
-                <div class="flex feature-labels pull-left">
-                    <span class="bg-electronica"></span> 
-                    <span class="bg-ambient"></span> 
-                    <span class="bg-downbeat"></span> 
-                </div>
-                <h2 class="mix-title pull-left"><i class="icon-star-empty"> </i>Animat - Sculptured in Space May 2013</h2><small class="pull-right">2 days</small>
-            </div>
-            <div class="player electronica">
-                <div class="controls pull-left">
-                    <a href="" class="btn btn-inverse btn-play"><i class="icon-play"></i></a>
-                    <span class="label label-stat">3,580</span>
-                </div>
-                <div class="wave">
-                    <img src="img/wave/big.png" alt="">
-                    <progress percent="50" class="bg-electronica"></progress>
-                </div>
-                <div class="controls pull-right">
-                    <a href="" class="btn btn-inverse btn-play"><i class="icon-star"></i></a>
-                    <span class="label label-stat">28</span>
-                </div>                
-            </div>
-            <div class="comments electronica" ng-click="isCollapsed = !isCollapsed">
-                <div class="comments-holder" tooltip-placement="top" tooltip="Add Comment">
-                    <div class="comments-timeline">
-                        <a href="#" class="comment" style="left:5%">
-                            <img src="img/members/thumb.jpg" alt="">
-                        </a>
-                        <a href="#" class="comment" style="left:15%">
-                            <img src="img/members/thumb.jpg" alt="">
-                        </a>
-                        <a href="#" class="comment" style="left:45%">
-                            <img src="img/members/thumb.jpg" alt="">
-                        </a>
-                        <a href="#" class="comment" style="left:75%">
-                            <img src="img/members/thumb.jpg" alt="">
-                        </a>                        
-                    </div>
-                </div>
-            </div>
-            <div class="add-comment" collapse="isCollapsed">
-                <form class="form clearfix">
-                    <img class="pull-left" src="img/members/thumb.jpg" alt="">
-                    <textarea placeholder="Leave a message..."></textarea>
-                    <div class="pull-right">
-                        <button type="submit" class="btn btn-block btn-mini btn-inverse electronica" ng-click="isCollapsed = !isCollapsed">Add Comment</button>
-                        <label class="checkbox">
-                            <input type="checkbox"> out of timeline
-                        </label>
-                    </div>
-                </form>                
-            </div>            
-            <div class="clearfix quick-stat hide">
-                <img src="img/mix/analytics.png" alt="">
-                <!-- Favourites -->
-                <ul class="inline favorites">
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt=""> castor2</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">mrdubya</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">Wolle</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">pacykarz</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">spartakproject1</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">Fullbring</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">PLINDA</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/members/thumb.jpg" alt="">dzahsh</a>
-                    </li>                    
-                </ul>            
-            </div>
+    <img src="img/artist/th_artist.jpg" alt="">
+    <p>
+      <em class="meta">chilled beats and cinematic electronica</em>
+    </p>
+    <p class="location">United Kingdom</p>
+    <p>
+      <a class="btn btn-small" href="#"><i class="icon-plus"></i> Follow</a> 
+      <img src="img/like.png" alt="">
+    </p>
+
+  </div>
+  <!--/span-->
+  <div class="span10">
+    <!-- Mix Player -->
+    <div class="mix-main">
+      <div class="meta clearfix">
+        <div class="flex-column feature-labels pull-left">
+          <span class="flex-item bg-electronica"></span> 
+          <span class="flex-item bg-ambient"></span> 
+          <span class="flex-item bg-downbeat"></span> 
         </div>
-
-        <!-- Mix Details -->
-        <div class="row-fluid">
-            <!-- Description -->
-            <div class="span7">
-
-                <tabset id="mix-info">
-                    <tab>
-                        <tab-heading>
-                            <i class="icon-bar-chart electronica"></i> Description
-                        </tab-heading>
-                        <p>Steeped in the tradition of Sheffields world-leading electronic music scene, Mark Daly and Michael Harding - aka The Only Michael  have been working together since 2004 and have released two albums and six EPs of their own material on labels including Dubmission, Blodusgar, Big Chill and Klasik Lounge, as well as remixing for artists including
-                        Deep Dive Corp, Pitch Black and DF Tram.</p>
-                        <p>They have also devised and performed new live soundtracks to cult films including Belleville Rendezvous, The Straight Story and John Carpenter's Dark Star.</p>
-                        <p>'Sculptured in Space' features three tracks from the 'Stargazing Remixed' EPs, inspired by the Dark Star soundtrack, as well as new and old favourites from the Animat DJ bag.</p>
-                        <p><a href="#">www.animat.co.uk</a></p>
-                    </tab>    
-                    <tab>
-                        <tab-heading>
-                            <i class="icon-reorder electronica"></i> Tracklist
-                        </tab-heading>
-                        <!-- Tracklist -->
-                        <table class="table table-stripped table-condensed tracklist">
-                            <tbody>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>The American Dollar - Anything You Synthesise (Ambient)</td>
-                                </tr>
-                                <tr>
-                                    <td>2.</td>
-                                    <td>Animat - Lost in the Valley of the Scintilla Strings (Misled Convoy Mix )</td>
-                                </tr>
-                                <tr>
-                                    <td>3.</td>
-                                    <td>Skalpel - Sculpture</td>
-                                </tr>
-                                <tr>
-                                    <td>4.</td>
-                                    <td>Easy Star All Stars - First Light (Dubmatix Remix)</td>
-                                </tr>
-                                <tr>
-                                    <td>5.</td>
-                                    <td>Animat - Liquid Fuel (Riccicomoto, Lost in Jazz Session)</td>
-                                </tr>
-                                <tr>
-                                    <td>6.</td>
-                                    <td>Emancipator - Afterglow</td>
-                                </tr>
-                                <tr>
-                                    <td>7.</td>
-                                    <td>Nick Drake - Northern Sky</td>
-                                </tr>
-                                <tr>
-                                    <td>8.</td>
-                                    <td>The Love Theme - Freedom (Mark Hjorthoy remix)</td>
-                                </tr>
-                                <tr>
-                                    <td>9.</td>
-                                    <td>DFRNT - Turning Back</td>
-                                </tr>
-                                <tr>
-                                    <td>10.</td>
-                                    <td>Olafur Arnalds - Only The Winds</td>
-                                </tr>
-                                <tr>
-                                    <td>11.</td>
-                                    <td>Minke - The Jetpack (Animat remix)</td>
-                                </tr>
-                                <tr>
-                                    <td>12.</td>
-                                    <td>Animat - Stargazing (The Only Michael's High and Glassy Mix)</td>
-                                </tr>
-                        
-                            </tbody>
-                        </table>
-                    </tab>
-                    <tab>
-                        <tab-heading>
-                            <i class="icon-comments electronica"></i> Comments: 8
-                        </tab-heading>
-                        <div class="text-right shouts-filter">
-                            <strong>sort by:</strong>
-                            <ul class="nav nav-pills">
-                                <li>
-                                    <a href="#">date</a>
-                                </li>  
-                                <li class="active">
-                                    <a href="#">timeline</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="media shouts" ng-repeat="shout in shouts">
-                            <a href="#" class="pull-left">
-                                <img src="img/members/thumb.jpg" alt="">
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">{{shout.member}}</h4> 
-                                <p class="meta">{{shout.timestamp}}</p>
-                                <div class="shout">{{shout.comment}}</div>
-                            </div>
-                        </div>
-                    </tab>
-                    <tab>
-                        <tab-heading>
-                            <i class="icon-globe electronica"></i> Share/Embed
-                        </tab-heading>
-                        <div class="btn-group btn-group-vertical">
-                            <a tooltip-placement="top" tooltip="Share" class="btn btn-inverse" href="#"><i class="icon-share"></i></a>
-                            <a tooltip-placement="top" tooltip="Embed" class="btn btn-inverse" href="#"><i class="icon-link"></i></a>
-                        </div>
-                    </tab>
-                    <tab>                    
-                        <tab-heading>
-                            <i class="icon-globe electronica"></i> Heat Map
-                        </tab-heading>
-                        <img src="img/mix/heatmap.png" alt="">
-                    </tab>
-                </tabset>
-
-            </div>
-            
-            <div class="span5">
-                <h3>Featured in:</h3>
-                <div class="feature-top">
-                    <h4 class="feature-title">Animat - Sculptured in Space mix</h4>
-                    <a href=""><img src="img/featured/5.jpg" alt=""></a>
-                </div>
-                <h3>Related Artists:</h3>
-                <ul class="thumbnails related">
-                    <li class="span4">
-                        <a href=""><img alt="" src="img/artist/1.jpg"></a>
-                    </li>
-                    <li class="span4">
-                        <a href=""><img alt="" src="img/artist/2.jpg"></a>
-                    </li>
-                    <li class="span4">
-                        <a href=""><img alt="" src="img/artist/3.jpg"></a>
-                    </li>
-                </ul>
-
-            </div>
+        <h2 class="mix-title pull-left"><i class="icon-star-empty"> </i>Animat - Sculptured in Space May 2013</h2><small class="pull-right">2 days</small>
+      </div>
+      <div class="player electronica">
+        <div class="player-controls pull-left">
+          <a href="" class="btn btn-inverse btn-play"><i class="icon-play"></i></a>
+          <span class="label label-stat" ng-click="toggleBlock(statBlock, $event)">3,580</span>
         </div>
-
+        <div class="wave">
+          <img src="img/wave/big.png" alt="">
+          <progress percent="50" class="bg-electronica"></progress>
+        </div>
+        <div class="player-controls pull-right">
+          <a href="" class="btn btn-inverse btn-play"><i class="icon-star"></i></a>
+          <span class="label label-stat">28</span>
+        </div>                
+      </div>
+      <div class="comments electronica" ng-click="isCollapsed = !isCollapsed">
+        <div class="comments-holder" tooltip-placement="top" tooltip="Add Comment">
+          <div class="comments-timeline">
+            <a href="#" class="comment" style="left:5%">
+              <img src="img/members/thumb.jpg" alt="">
+            </a>
+            <a href="#" class="comment" style="left:15%">
+              <img src="img/members/thumb.jpg" alt="">
+            </a>
+            <a href="#" class="comment" style="left:45%">
+              <img src="img/members/thumb.jpg" alt="">
+            </a>
+            <a href="#" class="comment" style="left:75%">
+              <img src="img/members/thumb.jpg" alt="">
+            </a>                        
+          </div>
+        </div>
+      </div>
+      <div class="add-comment" collapse="isCollapsed">
+        <form class="form clearfix">
+          <img class="pull-left" src="img/members/thumb.jpg" alt="">
+          <textarea placeholder="Leave a message..."></textarea>
+          <div class="pull-right">
+            <button type="submit" class="btn btn-block btn-mini btn-inverse electronica" ng-click="isCollapsed = !isCollapsed">Add Comment</button>
+            <label class="checkbox">
+              <input type="checkbox"> out of timeline
+            </label>
+          </div>
+        </form>                
+      </div>            
+      <div class="stat">
+        <img src="img/mix/analytics.png" alt="">
+      </div>
+      <div class="clearfix favs">
+        <!-- Favourites -->
+        <ul class="inline favorites">
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt=""> castor2</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">mrdubya</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">Wolle</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">pacykarz</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">spartakproject1</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">Fullbring</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">PLINDA</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/members/thumb.jpg" alt="">dzahsh</a>
+          </li>                    
+        </ul>            
+      </div>
     </div>
-    <!--/span-->
+
+    <!-- Mix Details -->
+    <div class="row-fluid">
+      <!-- Description -->
+      <div class="span7">
+
+        <tabset id="mix-info">
+          <tab>
+            <tab-heading>
+            <i class="icon-bar-chart electronica"></i> Description
+          </tab-heading>
+          <p>Steeped in the tradition of Sheffields world-leading electronic music scene, Mark Daly and Michael Harding - aka The Only Michael  have been working together since 2004 and have released two albums and six EPs of their own material on labels including Dubmission, Blodusgar, Big Chill and Klasik Lounge, as well as remixing for artists including
+            Deep Dive Corp, Pitch Black and DF Tram.</p>
+            <p>They have also devised and performed new live soundtracks to cult films including Belleville Rendezvous, The Straight Story and John Carpenter's Dark Star.</p>
+            <p>'Sculptured in Space' features three tracks from the 'Stargazing Remixed' EPs, inspired by the Dark Star soundtrack, as well as new and old favourites from the Animat DJ bag.</p>
+            <p><a href="#">www.animat.co.uk</a></p>
+          </tab>    
+          <tab>
+            <tab-heading>
+            <i class="icon-reorder electronica"></i> Tracklist
+          </tab-heading>
+          <!-- Tracklist -->
+          <table class="table table-stripped table-condensed tracklist">
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>The American Dollar - Anything You Synthesise (Ambient)</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Animat - Lost in the Valley of the Scintilla Strings (Misled Convoy Mix )</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Skalpel - Sculpture</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Easy Star All Stars - First Light (Dubmatix Remix)</td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>Animat - Liquid Fuel (Riccicomoto, Lost in Jazz Session)</td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>Emancipator - Afterglow</td>
+              </tr>
+              <tr>
+                <td>7.</td>
+                <td>Nick Drake - Northern Sky</td>
+              </tr>
+              <tr>
+                <td>8.</td>
+                <td>The Love Theme - Freedom (Mark Hjorthoy remix)</td>
+              </tr>
+              <tr>
+                <td>9.</td>
+                <td>DFRNT - Turning Back</td>
+              </tr>
+              <tr>
+                <td>10.</td>
+                <td>Olafur Arnalds - Only The Winds</td>
+              </tr>
+              <tr>
+                <td>11.</td>
+                <td>Minke - The Jetpack (Animat remix)</td>
+              </tr>
+              <tr>
+                <td>12.</td>
+                <td>Animat - Stargazing (The Only Michael's High and Glassy Mix)</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </tab>
+        <tab>
+          <tab-heading>
+          <i class="icon-comments electronica"></i> Comments: 8
+        </tab-heading>
+        <div class="text-right shouts-filter">
+          <strong>sort by:</strong>
+          <ul class="nav nav-pills">
+            <li>
+              <a href="#">date</a>
+            </li>  
+            <li class="active">
+              <a href="#">timeline</a>
+            </li>
+          </ul>
+        </div>
+        <div class="media shouts" ng-repeat="shout in shouts">
+          <a href="#" class="pull-left">
+            <img src="img/members/thumb.jpg" alt="">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">{{shout.member}}</h4> 
+            <p class="meta">{{shout.timestamp}}</p>
+            <div class="shout">{{shout.comment}}</div>
+          </div>
+        </div>
+      </tab>
+      <tab>
+        <tab-heading>
+        <i class="icon-share electronica"></i> Share/Embed
+      </tab-heading>
+      
+
+<form class="form-horizontal form-share">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">direct link:</label>
+    <div class="controls">
+      <div class="pull-left">
+        <input type="text" id="inputEmail" value="http://samurai.fm/animat/animat-sculptured-in-space-mix">
+        <label class="checkbox">
+          <input type="checkbox"> shorten
+        </label>
+      </div>
+      <button class="btn btn-small">Copy</button>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="">share:</label>
+    <div class="controls">
+      <div class="btn-group">
+        <a class="btn" href="#"><i class="icon-facebook"></i></a>
+        <a class="btn" href="#"><i class="icon-twitter"></i></a>
+        <a class="btn" href="#"><i class="icon-google-plus"></i></a>
+      </div>        
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">embed:</label>
+    <div class="controls">
+      <textarea name="" id=""><object width="480" height="80"><param name="movie" value="http://samurai.fm/flash/player.swf"/><param name="flashvars" value="pid=87049840"/><param name="allowFullScreen" value="true"/><param name="allowscriptaccess" value="always"/><embed src="http://samurai.fm/flash/player.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" flashvars="pid=87049840" width="480" height="80"></embed></object></textarea>
+      <button class="btn btn-small">Copy</button>
+    </div>
+  </div>
+</form>
+
+    </tab>
+    <tab>                    
+      <tab-heading>
+      <i class="icon-globe electronica"></i> Heat Map
+    </tab-heading>
+    <img src="img/mix/heatmap.png" alt="">
+  </tab>
+</tabset>
+
+</div>
+
+  <div class="span5">
+    <h3>Featured in:</h3>
+    <div class="feature-top">
+      <h4 class="feature-title">Animat - Sculptured in Space mix</h4>
+      <a href=""><img src="img/featured/5.jpg" alt=""></a>
+    </div>
+    <h3>Related Artists:</h3>
+    <ul class="thumbnails related">
+      <li class="span4">
+        <a href="#artist"><img alt="" src="img/artist/1.jpg"></a>
+      </li>
+      <li class="span4">
+        <a href="#artist"><img alt="" src="img/artist/2.jpg"></a>
+      </li>
+      <li class="span4">
+        <a href="#artist"><img alt="" src="img/artist/3.jpg"></a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+</div>
+<!--/span-->
 </div>
 <!--/row-->
