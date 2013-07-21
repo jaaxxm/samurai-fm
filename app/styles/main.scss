@@ -4,7 +4,7 @@
 
 
 
-hr {clear: both;}
+hr, .clear {clear: both;}
 // Flex globals
 @mixin flexbox() {
   display: -webkit-box;
@@ -187,12 +187,7 @@ body {
   .feature-info {
     top: 0;
     right: 0;
-  }
-  .player { 
-    top: auto;
-    bottom: 0;
-    width: 100%;
-  }
+  }  
 }
 .feature-labels {
   margin-top: 2px;
@@ -202,6 +197,9 @@ body {
     margin: 1px 0 0;
     &:first-child {margin-top: 0;}
   }
+}
+.feature-img {
+  width: 100%;
 }
 // REGULAR
 .regular-link {
@@ -234,21 +232,74 @@ body {
 }
 .player {
   position: relative;
-  height: 80px;
-//    z-index: 4;
+  z-index: 4;
+  margin:0 0 $baseLineHeight;
 }
 .player-controls {
   background-color: #000;
   text-align: center;
-  width:60px;
-  a {
-    @include square(58px);
-    padding: 0;
-  }
-  i {
-    line-height: 60px;
+  a { padding: 0; }
+  .label {cursor: pointer;}
+}
+.wave {
+  position: absolute;
+  cursor: pointer;
+  img {
+    width: 100%;
   }
 }
+.mix-full {
+  // Player sizes
+  .player {
+    height: 80px;
+    .player-controls {
+      width:60px;
+      a {@include square(58px);}
+      i {line-height: 60px;}
+    }
+    .wave {
+      position: absolute;
+      margin: 0 60px;
+      cursor: pointer;
+      img {
+        height: 54px;
+        width: 100%;
+      }
+    }
+  }
+  // Comments sizes
+  .comments {
+    margin: 0 60px;
+    top:59px;
+  }
+
+}
+.mix-list {
+  // Player sizes
+  .player {
+    height: 60px;
+    .player-controls {
+      width:40px;
+      a {@include square(38px);}
+      i {line-height: 40px;}
+    }
+    .wave {
+      position: absolute;
+      margin: 0 40px;
+      cursor: pointer;
+      img {
+        height: 34px;
+        width: 100%;
+      }
+    }
+  }
+  // Comments sizes
+  .comments {
+    margin: 0 40px;
+    top:39px;    
+  }
+}
+// Player stats
 .label-stat {
   font-size: $baseFontSize - 3;
   color: #aaa;
@@ -257,25 +308,14 @@ body {
   background: $grayDarker;
   border: 1px solid #111;
 }
-.wave {
-  position: absolute;
-  margin: 0 60px;
-  cursor: pointer;
-  img {
-    height: 54px;
-    width: 100%;
-  }
-}
 // Comments
 .comments {
   height: 24px;
   position: relative;
-  top:-21px;
 }
 .comments-holder {
   position: absolute;
   z-index: 3;
-  padding: 0 60px;
   width:100%;
   @include box-sizing(border-box);
 }
@@ -299,7 +339,7 @@ body {
   .btn { margin: $baseLineHeight / 4 0;}
 }
 .quick-stat {margin-top: 10px;}
-#mix-info {
+#mix-info, #artist-info {
     // Actual tabs (as links)
     .nav-tabs > li > a {
       padding-top: 8px;
@@ -390,16 +430,35 @@ ul.favorites {
 
 }
 .col-artist, .mix-artist {
-  h2, h3 {margin-top: 0;}
+  h2, h3, h4, h5 {margin-top: 0;}
   img {margin-bottom: $baseLineHeight / 2;}
 }
 
-.artist-labels {
+.artist-labels, .mix-labels {
   width: 100%;
+  // margin: $baseLineHeight / 2 0;
   span {
-    height: 10px;
+/*     height: 10px; */
     margin-left: 1px;
+    line-height: 14px;
+    text-align:center;
+    font-size: $baseFontSize - 3;
     &:first-child {margin-left: 0;}
+  }
+}
+.artist-actions { line-height: 35px;}
+ul.artist-social {
+  > li {
+    margin: 0 5px 0 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  a.icon-stack { 
+    .icon-stack-base { color: #000;}
+    &:hover {
+      text-decoration: none;
+      .icon-stack-base { color: #151515;}
+    }
   }
 }
 // Followers
@@ -412,11 +471,11 @@ ul.followers {
 .animate-enter, 
 .animate-leave
 { 
-  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -webkit-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
   position: relative;
   display: block;
 } 
@@ -433,4 +492,24 @@ ul.followers {
   opacity: 0;
   top: -50px;
   height: 0px;
+}
+
+
+.fadeIn-setup,.fadeOut-setup {
+  -webkit-transition: 0.3s linear opacity;
+  -moz-transition: 0.3s linear opacity;
+  -o-transition: 0.3s linear opacity;
+  transition: 0.3s linear opacity;
+}
+.fadeIn-setup{
+  opacity:0;
+}
+.fadeOut-setup{
+  opacity:1;
+}
+.fadeIn-setup.fadeIn-start {
+  opacity: 1;
+}
+.fadeOut-setup.fadeOut-start{
+    opacity:0;
 }

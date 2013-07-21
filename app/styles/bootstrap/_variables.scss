@@ -216,9 +216,9 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
 
 // Pagination
 // -------------------------
-$paginationBackground:                #fff !default;
-$paginationBorder:                    #ddd !default;
-$paginationActiveBackground:          #f5f5f5 !default;
+$paginationBackground:                $grayDarker !default;
+$paginationBorder:                    #111 !default;
+$paginationActiveBackground:          $gray !default;
 
 
 // Hero unit
