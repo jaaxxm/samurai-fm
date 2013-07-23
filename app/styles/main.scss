@@ -180,30 +180,19 @@ body {
     width: 100%;
     line-height: 1.5;
     margin: 0;
-    padding:0 10px;
+    padding:10px;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
     @include gradient-horizontal-transfluent();
+    @include box-sizing(border-box);
   }
-  .feature-info {
-    top: 0;
-    right: 0;
-  }  
 }
-.mix-labels {
-  margin: 2px 10px 0 0;
-  height:32px;
-  width:40px;
-  span {
-    margin: 1px 0 0;
-    &:first-child {margin-top: 0;}
-  }
+.feature-share {
+  line-height: $baseLineHeight * 1.7;
+  text-align: right;
 }
 .feature-img {
   width: 100%;
-}
-.ico-feature {
-  @include square(40px);
-  @include border-radius(20px);
+  margin-bottom: $baseLineHeight;
 }
 // REGULAR
 .regular-link {
@@ -220,13 +209,25 @@ body {
 
 //  Meta
 .meta {
-  h2, h4 {
+  h2 {
     margin: 0;
-    line-height: $baseLineHeight * 2;
+    line-height: $baseLineHeight * 1.7;
+    small {
+      color: #999;
+      display: block;
+      line-height: $baseLineHeight + 3;
+      font-size: $baseFontSize;
+    }
   }
-  small {
-    line-height: $baseLineHeight * 2;
-    color: #999;
+  h4 {
+    margin: 0;
+    line-height: $baseLineHeight - 3;
+    font-size: 15px;
+    small {
+      color: #999;
+      display: block;
+      line-height: $baseLineHeight + 3;
+    }
   }
 }
 .trigger {
@@ -273,6 +274,22 @@ body {
       }
     }
   }
+  .mix-labels {  
+    margin: 0 15px 3px 0;
+    @include size(58px, 59px);
+    span {
+      margin: 1px 0 0;
+      text-align: center;
+      font-size: $baseFontSize - 3;
+      &:first-child {margin-top: 0;}
+    }
+  }
+  // samurai ico sizes
+  .ico-feature {
+    margin: 10px 10px 0 0;
+    @include square(40px);
+    @include border-radius(20px);
+  }
   // Comments sizes
   .comments {
     margin: 0 60px;
@@ -298,6 +315,21 @@ body {
         width: 100%;
       }
     }
+  }
+  // labels sizes
+  .mix-labels {  
+    margin-right: 10px;
+    @include size(38px, 39px);
+    span {
+      margin: 1px 0 0;
+      &:first-child {margin-top: 0;}
+    }
+  }
+  // samurai ico sizes
+  .ico-feature {
+    margin-right: 5px;
+    @include square(30px);
+    @include border-radius(15px);
   }
   // Comments sizes
   .comments {
@@ -444,9 +476,9 @@ ul.favorites {
   span {
 /*     height: 10px; */
     margin-left: 1px;
-    line-height: 14px;
+    line-height: $baseLineHeight - 2;
     text-align:center;
-    font-size: $baseFontSize - 3;
+    font-size: $baseFontSize * .9;
     &:first-child {margin-left: 0;}
   }
 }
@@ -468,7 +500,7 @@ ul.artist-social {
 }
 // Followers
 ul.followers {
-  margin-bottom: 0;
+  margin-bottom: 2px;
   > li {
     margin-bottom: 10px;
     padding: 0 10px 0 0;

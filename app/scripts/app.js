@@ -23,6 +23,10 @@ angular.module('samuraiFMApp', ['ui.bootstrap'])
         templateUrl: 'views/artist.html',
         controller: 'ArtistCtrl'
       })
+      .when('/featured', {
+        templateUrl: 'views/featured.html',
+        controller: 'FeaturedCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

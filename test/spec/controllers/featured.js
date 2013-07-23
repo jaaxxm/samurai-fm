@@ -1,19 +1,19 @@
 'use strict';
 
-describe('Controller: ArtistCtrl', function () {
+describe('Controller: FeaturedCtrl', function () {
 
   // load the controller's module
   beforeEach(module('samuraiFMApp'));
 
-  var ArtistCtrl,
+  var FeaturedCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ArtistCtrl = $controller('ArtistCtrl', {
+    FeaturedCtrl = $controller('FeaturedCtrl', {
       $scope: scope
     });
   }));
-  
+
 });

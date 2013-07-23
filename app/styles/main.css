@@ -173,7 +173,7 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   color: #dddddd;
   background-color: #2e2e2e; }
@@ -466,12 +466,12 @@ p {
 
 .lead {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 19.5px;
   font-weight: 200;
   line-height: 30px; }
 
 small {
-  font-size: 90%; }
+  font-size: 11px; }
 
 strong {
   font-weight: bold; }
@@ -543,35 +543,26 @@ h3 {
   line-height: 30px; }
 
 h1 {
-  font-size: 38.5px; }
+  font-size: 35.75px; }
 
 h2 {
-  font-size: 26.6px; }
+  font-size: 24.7px; }
 
 h3 {
-  font-size: 24.5px; }
+  font-size: 22.75px; }
 
 h4 {
-  font-size: 17.5px; }
+  font-size: 16.25px; }
 
 h5 {
-  font-size: 14px; }
+  font-size: 13px; }
 
 h6 {
-  font-size: 11.9px; }
+  font-size: 11.05px; }
 
-h1 small {
-  font-size: 24.5px; }
-
-h2 small {
-  font-size: 17.5px; }
-
-h3 small {
-  font-size: 14px; }
-
-h4 small {
-  font-size: 14px; }
-
+/* h1 small { font-size: $baseFontSize * 1.75; }
+h2 small { font-size: $baseFontSize * 1.25; }
+h3 small { font-size: $baseFontSize; } */
 .page-header {
   padding-bottom: 9px;
   margin: 20px 0 30px;
@@ -661,7 +652,7 @@ blockquote {
   border-left: 5px solid #eeeeee; }
   blockquote p {
     margin-bottom: 0;
-    font-size: 17.5px;
+    font-size: 16.25px;
     font-weight: 300;
     line-height: 1.25; }
   blockquote small {
@@ -700,7 +691,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 11px;
   color: #2e2e2e;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -717,7 +708,7 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   word-break: break-all;
   word-wrap: break-word;
@@ -756,7 +747,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 19.5px;
   line-height: 40px;
   color: #2e2e2e;
   border: 0;
@@ -770,7 +761,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: normal;
   line-height: 20px; }
 
@@ -805,7 +796,7 @@ input[type="color"],
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   color: #555555;
   -webkit-border-radius: 0;
@@ -1287,7 +1278,7 @@ select:focus:invalid {
   .input-prepend .uneditable-input,
   .input-prepend .dropdown-menu,
   .input-prepend .popover {
-    font-size: 14px; }
+    font-size: 13px; }
   .input-append input,
   .input-append select,
   .input-append .uneditable-input,
@@ -1315,7 +1306,7 @@ select:focus:invalid {
     height: 20px;
     min-width: 16px;
     padding: 4px 5px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     line-height: 20px;
     text-align: center;
@@ -2016,7 +2007,7 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   text-align: center;
   vertical-align: middle;
@@ -2064,7 +2055,7 @@ button.close {
 
 .btn-large {
   padding: 11px 19px;
-  font-size: 17.5px;
+  font-size: 16.25px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
@@ -2075,7 +2066,7 @@ button.close {
 
 .btn-small {
   padding: 2px 10px;
-  font-size: 11.9px;
+  font-size: 11.05px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
@@ -2090,7 +2081,7 @@ button.close {
 
 .btn-mini {
   padding: 0px 6px;
-  font-size: 10.5px;
+  font-size: 9.75px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
@@ -2325,16 +2316,16 @@ input[type="submit"].btn {
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
-  font-size: 14px; }
+  font-size: 13px; }
 
 .btn-group > .btn-mini {
-  font-size: 10.5px; }
+  font-size: 9.75px; }
 
 .btn-group > .btn-small {
-  font-size: 11.9px; }
+  font-size: 11.05px; }
 
 .btn-group > .btn-large {
-  font-size: 17.5px; }
+  font-size: 16.25px; }
 
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -3430,7 +3421,7 @@ input[type="submit"].btn {
 .pagination-large ul > li > a,
 .pagination-large ul > li > span {
   padding: 11px 19px;
-  font-size: 17.5px; }
+  font-size: 16.25px; }
 .pagination-large ul > li:first-child > a,
 .pagination-large ul > li:first-child > span {
   -webkit-border-top-left-radius: 0;
@@ -3472,12 +3463,12 @@ input[type="submit"].btn {
 .pagination-small ul > li > a,
 .pagination-small ul > li > span {
   padding: 2px 10px;
-  font-size: 11.9px; }
+  font-size: 11.05px; }
 
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
   padding: 0px 6px;
-  font-size: 10.5px; }
+  font-size: 9.75px; }
 
 .pager {
   margin: 20px 0;
@@ -3883,7 +3874,7 @@ a.thumbnail:focus {
 .badge {
   display: inline-block;
   padding: 2px 4px;
-  font-size: 11.844px;
+  font-size: 10.998px;
   font-weight: bold;
   line-height: 14px;
   color: white;
@@ -6217,7 +6208,7 @@ body {
     width: 100%;
     line-height: 1.5;
     margin: 0;
-    padding: 0 10px;
+    padding: 10px;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) -20%, transparent 100%);
     /* FF3.6+ */
@@ -6230,29 +6221,18 @@ body {
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.85) -20%, transparent 100%);
     /* IE10+ */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) -20%, transparent 100%);
-    /* W3C */ }
-  .feature-top .feature-info {
-    top: 0;
-    right: 0; }
+    /* W3C */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
-.mix-labels {
-  margin: 2px 10px 0 0;
-  height: 32px;
-  width: 40px; }
-  .mix-labels span {
-    margin: 1px 0 0; }
-    .mix-labels span:first-child {
-      margin-top: 0; }
+.feature-share {
+  line-height: 34px;
+  text-align: right; }
 
 .feature-img {
-  width: 100%; }
-
-.ico-feature {
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px; }
+  width: 100%;
+  margin-bottom: 20px; }
 
 .regular-link {
   float: left;
@@ -6266,12 +6246,22 @@ body {
 .regular-content {
   min-height: 80px; }
 
-.meta h2, .meta h4 {
+.meta h2 {
   margin: 0;
-  line-height: 40px; }
-.meta small {
-  line-height: 40px;
-  color: #999; }
+  line-height: 34px; }
+  .meta h2 small {
+    color: #999;
+    display: block;
+    line-height: 23px;
+    font-size: 13px; }
+.meta h4 {
+  margin: 0;
+  line-height: 17px;
+  font-size: 15px; }
+  .meta h4 small {
+    color: #999;
+    display: block;
+    line-height: 23px; }
 
 .trigger {
   line-height: 26px; }
@@ -6314,6 +6304,23 @@ body {
     .mix-full .player .wave img {
       height: 54px;
       width: 100%; }
+.mix-full .mix-labels {
+  margin: 0 15px 3px 0;
+  width: 59px;
+  height: 58px; }
+  .mix-full .mix-labels span {
+    margin: 1px 0 0;
+    text-align: center;
+    font-size: 10px; }
+    .mix-full .mix-labels span:first-child {
+      margin-top: 0; }
+.mix-full .ico-feature {
+  margin: 10px 10px 0 0;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
 .mix-full .comments {
   margin: 0 60px;
   top: 59px; }
@@ -6334,12 +6341,27 @@ body {
     .mix-list .player .wave img {
       height: 34px;
       width: 100%; }
+.mix-list .mix-labels {
+  margin-right: 10px;
+  width: 39px;
+  height: 38px; }
+  .mix-list .mix-labels span {
+    margin: 1px 0 0; }
+    .mix-list .mix-labels span:first-child {
+      margin-top: 0; }
+.mix-list .ico-feature {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
 .mix-list .comments {
   margin: 0 40px;
   top: 39px; }
 
 .label-stat {
-  font-size: 11px;
+  font-size: 10px;
   color: #aaa;
   font-weight: normal;
   display: block;
@@ -6472,9 +6494,9 @@ ul.favorites img {
   .artist-labels span {
     /*     height: 10px; */
     margin-left: 1px;
-    line-height: 14px;
+    line-height: 18px;
     text-align: center;
-    font-size: 11px; }
+    font-size: 11.7px; }
     .artist-labels span:first-child {
       margin-left: 0; }
 
@@ -6496,7 +6518,7 @@ ul.artist-social a.icon-stack:hover {
     color: #151515; }
 
 ul.followers {
-  margin-bottom: 0; }
+  margin-bottom: 2px; }
   ul.followers > li {
     margin-bottom: 10px;
     padding: 0 10px 0 0; }
